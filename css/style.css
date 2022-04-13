@@ -1,0 +1,394 @@
+:root{
+    --color-primary: #707070;
+    --color-secondary: #888888;
+    --color-tertiary: #FF0000;
+    --color-background: #fff;
+}
+
+
+                /*****************      MAIN      ************************/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--color-background);
+    font-family: Helvetica;
+}
+
+
+
+
+                    /*****************      NAV      ************************/
+
+
+.nav{
+   background-color: var(--color-primary);
+    width: 100%;
+    height: 399px;
+    text-align: center;
+    color: var(--color-background);
+    padding-top: 69px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 65%);
+}
+
+.nav .navInfo .productsSection {
+    font-size: 20px;
+}
+
+.nav .navInfo h1{
+    font-size: 40px;
+}
+
+.nav .navInfo .congratProducts{
+    font-size: 14px;
+    padding: 24px 0px;
+}
+
+.liHeader{
+    display: flex;
+    list-style-type: none;
+    width: 900px;
+    margin: 1% auto;
+}
+
+.liHeader li{
+    border: 1px solid var(--color-primary);
+    width: 160px;
+    height: 40px;
+    padding: 10px;
+    margin: 0 40px;
+    cursor: pointer;
+    background-color: var(--color-background);
+    border-radius: 4px 4px 4px 4px;
+    
+    
+}
+
+.liHeader li a{
+    text-decoration: none;
+    box-shadow: none;
+    font-size: 15px;
+    color: var(--color-secondary);
+    
+
+}
+
+
+
+
+                    /*****************      ARTICLE      ************************/
+
+
+.article {
+    margin: 0 auto;
+    width: 920px;
+    height: 500px;
+    color: var(--color-secondary);
+    display: flex;
+}   
+
+.algorithmHelp{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.aboutAlgorithm{
+    width: 520px;
+    font-size: 12px;
+    height: 220px;
+}
+
+
+
+
+
+                    /*****************      FORM      ************************/
+
+
+#formDatos{
+    margin-top: 30px;
+    margin-left: 60px;
+}
+
+.inputRequest{
+    width: 340px;
+    height: 30px;
+    margin-top: 7px;
+}
+
+.formRequest{
+    font-size: 12px;
+    margin-top: 20px;
+    
+}
+
+
+.gender {
+    cursor: pointer;
+    margin: 23px 0;
+}
+
+#gender{
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+.formSend{
+    margin-top: 10px;
+    width: 340px;
+    height: 39px;
+    cursor: pointer;
+    background-color: var(--color-background);
+    border-radius: 4px 4px 4px 4px;
+    color: var(--color-secondary);
+    border: 1px solid var(--color-secondary);
+}
+
+.inputError{
+    border: 1px solid var(--color-tertiary);
+    background-color: rgba(255, 0, 0, 0.643);
+}
+
+.spanError{
+    color: var(--color-tertiary);
+}
+
+
+#successfullySent{
+    color: green;
+    position:absolute;
+    margin-top: 150px;
+    
+}
+
+
+
+
+
+                    /*****************      PRODUCT LIST      ************************/
+
+
+.productsList{
+    margin: 0 auto;
+    max-height: 1018px;
+    width: 920px;
+}
+
+.productsList .specialSelecion{
+    margin: 0 auto;
+    width: 920px;
+    border: 0;
+    border-top: 1px solid black;
+    text-align: center;
+    overflow: visible;
+    padding: 0;
+    color: var(--color-secondary);
+}
+
+.productsList .specialSelecion::after{
+    content: "Sua seleção especial";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 18px;
+    padding: 0 0.3em;
+    background: var(--color-background);
+    font-weight: bold;
+}
+
+.produto-single{
+    width: 201px;
+    height: 350px;
+    margin: 39px 0;
+    color: var(--color-secondary);
+}
+
+.product{
+    width: 920px;
+    max-height: 100vh;
+    display:flex ;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.nameProduct{
+    font-size: 14px;
+    margin-top: 14px;
+}
+
+.productsLogo{
+    border: 1px solid var(--color-primary);
+    width: 200px;
+    height: 150px;
+}
+
+.productInfo{
+    margin-top: 14px;
+    color: var(--color-secondary);
+}
+
+.descriptionProduct{
+    font-size: 12px;
+    margin-top: 10px;
+    max-height: 600px;
+}
+
+.oldPrice{
+    font-size: 12px;
+    margin-top: 6px;
+}
+
+.currentPrice{
+    font-weight: bold;
+    margin-top: 6px;
+    font-size: 16px;
+}
+
+.installments{
+    font-size: 12px;
+    margin-top: 7px;
+}
+
+.buttonProduct{
+    width: 200px;
+    height: 30px;
+    margin-top: 10px;
+    border: 1px solid var(--color-primary);
+    color: var(--color-secondary);
+    cursor: pointer;
+    background-color: var(--color-background);
+    border-radius: 4px 4px 4px 4px;
+    font-size: 16px;
+}
+
+.moreProducts{
+    width: 260px;
+    height: 39px;
+    font-size: 16px;
+    border: 1px solid var(--color-primary);
+    border-radius: 4px 4px 4px 4px;
+    cursor: pointer;
+    background-color: var(--color-background);
+    color: var(--color-secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 1vh;
+    margin-bottom: 15vh;
+}
+
+
+
+
+
+                    /*****************      SHARE THE NEWS      ************************/
+
+
+
+.shareNewsHR{
+    margin: 0 auto;
+    width: 920px;
+    border: 0;
+    border-top: 1px solid black;
+    text-align: center;
+    overflow: visible;
+    padding: 0;
+    color: var(--color-secondary);
+}
+
+.shareNewsHR::after{
+    content: "Compartilhe a novidade";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 18px;
+    padding: 0 0.3em;
+    background: var(--color-background);
+    font-weight: bold;
+}
+
+.customList{
+    font-size: 14px;
+    color: var(--color-primary);
+    text-align: center;
+    margin: 40px 0;
+}
+
+.containerShareNews{
+    display: flex;
+    
+}
+
+.labelShareNews{
+    margin: 0 auto;
+    font-size: 12px;
+    color: var(--color-secondary);
+}
+
+.inputNameEmail{
+    width: 340px;
+    height: 30px;
+    border: 1px solid var(--color-primary);
+    margin-top: 7px;
+}
+
+.divButtonShare{
+    display: flex;
+}
+
+#sendShareNews{
+    width: 260px;
+    height: 39px;
+    background-color: var(--color-background);
+    margin: 60px auto;
+    border: 1px solid var(--color-primary);
+    color: var(--color-secondary);
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px 4px 4px 4px;
+}
+
+.sucessSentClass{
+    padding: 50px;
+}
+
+.inputErrorFriend{
+    background-color: var(--color-tertiary);
+}
+
+.errorFriend{
+    color: var(--color-tertiary);
+    font-size: 16px;
+}
+
+.friendSendSucess{
+    color: green;
+    
+}
+
+
+                 /*****************      FOOTER      ************************/
+
+
+.footer{
+    margin-top: 35vh;
+    background-color: var(--color-primary);
+    color: var(--color-background);
+    width: 100vw;
+    height: 30vh;
+    text-align: center;
+    clip-path: polygon(0% 40%, 100% 20%, 100% 100%, 0% 100%);
+}
+
+.footer .footerParagraph{
+    top: 65%;
+    position: relative;
+    font-size: 12px;
+}
